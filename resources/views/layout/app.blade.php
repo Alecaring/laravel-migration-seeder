@@ -8,6 +8,13 @@
     
 </head>
 <body>
-    <img src="{{ Vite::asset('resources/img/prova.webp') }}" alt="">
+    <header>
+        @include('partials.Header')
+    </header>
+    <main>
+        @yield('content')
+        {{-- <img src="{{ Vite::asset('resources/img/prova.webp') }}" alt=""> --}}
+    </main>
+    <footer class="footer">footer</footer>
 </body>
 </html>
