@@ -96,3 +96,52 @@ per creare la tabella laciamo il comando
         }
 
     {[( quando volgiomo andare avanti o indietro nel tempo )]}
+
+
+
+
+    @REM * crea il file per il fake data testing
+    php artisan make:seeder nomeTabellaSeeder
+
+
+
+    @REM* navigare nel file seeder dentro database e inserire i dati con nuova varisbile 
+    $examole = new InserireIlNomeDelModel
+    pospolare i dati con:
+    $example->adresss = "milano",
+    $example->price = 9,
+    $example->save()
+
+
+
+    @REM* fai partire il seeder
+    php artisan db:seed --class=HousesTableSeeder
+
+
+
+
+    https://fakerphp.org/
+
+
+
+    use faker\generator as faker
+
+    for (let i = 0; i < 10; i++) {
+
+        public function (Faker $faker) :void {
+
+            $house = new House,
+            $example->adresss = $faker->StreetAdress(),
+            $example->price = = $faker->,
+            $example->save()
+        }
+    }
+
+
+    php artisan db:seed --class=HousesTableSeeder
+
+
+
+
+    use Faker
+    $faker = Faker\Factory::create('it_IT');
